@@ -1,7 +1,7 @@
 plugins {
-    alias(libs.plugins.kotlin.compose)
+//    alias(libs.plugins.kotlin.compose) // Moved to the AndroidApplicationComposeConventionPlugin
+    alias(libs.plugins.runique.android.application.compose)
     alias(libs.plugins.mapsplatform.secrets.plugin) apply false
-    alias(libs.plugins.runique.android.application)
 }
 
 android {
@@ -11,10 +11,6 @@ android {
         applicationId = "com.felipebertanha.runique_android"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
-
-    buildFeatures {
-        compose = true
     }
 }
 
