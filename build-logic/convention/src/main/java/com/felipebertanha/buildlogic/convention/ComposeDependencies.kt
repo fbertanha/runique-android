@@ -1,4 +1,5 @@
-import com.felipebertanha.buildlogic.convention.libs
+package com.felipebertanha.buildlogic.convention
+
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.DependencyHandlerScope
 import org.gradle.kotlin.dsl.project
